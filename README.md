@@ -22,6 +22,23 @@ ZetaVision restaurant searcher
   -V, --version             Print version information and exit.
 ```
 
+Running a search for restaurants $30 and under within distance 5 and Chinese cuisine:
+```
+› java -jar out/artifacts/zetavisions_jar/zetavisions.jar -p 30 -d 5 -c chinese
+
+Loaded 19 cuisines
+Loaded 200 restaurants
+Filtering 200 restaurants with SearchTerms{restaurantName='', starRating=0, distanceMiles=5, priceMax=30, cuisine='chinese'}
+Sorting...
+
+Found 6 results! Here are the best 5:
+	Restaurant{name='Deliciouszilla', customerRating=4, distance=1, price=15, cuisineId=2}
+	Restaurant{name='Chow Table', customerRating=1, distance=1, price=10, cuisineId=2}
+	Restaurant{name='Grill Tasty', customerRating=2, distance=2, price=30, cuisineId=2}
+	Restaurant{name='Hot Bar', customerRating=4, distance=4, price=20, cuisineId=2}
+	Restaurant{name='Fed Tasty', customerRating=3, distance=5, price=25, cuisineId=2}
+```
+
 ### general overview of how search works
 1. cli arguments build `SearchTerms` and instantiates `ZetaVisionSearcher`
 2. call to search function
