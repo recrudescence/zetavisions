@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="zetavisions:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/zetavisions_jar</output-path>
+    <root id="archive" name="zetavisions.jar">
+      <element id="module-output" name="zetavisions" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/info/picocli/picocli/4.6.1/picocli-4.6.1.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
